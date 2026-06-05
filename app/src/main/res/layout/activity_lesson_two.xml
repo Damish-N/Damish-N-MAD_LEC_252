@@ -7,23 +7,30 @@
     android:padding="20dp">
 
     <Button
-        android:id="@+id/btnLesson1"
+        android:id="@+id/btnLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lesson 01"/>
+        android:text="Linear Layout"/>
 
     <Button
-        android:id="@+id/btnLesson2"
+        android:id="@+id/btnConstrainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lesson 02"
+        android:text="Constraint Layout"
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:id="@+id/btnLesson3"
+        android:id="@+id/btnFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lesson 03"
+        android:text="Frame Layout"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
         android:layout_marginTop="10dp"/>
 
 </LinearLayout>
