@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NIBM_BATCH246">
         <activity
+            android:name=".layouts.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LessonTwo"
+            android:exported="false" />
+        <activity
+            android:name=".LessonOne"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

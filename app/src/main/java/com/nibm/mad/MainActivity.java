@@ -1,5 +1,6 @@
 package com.nibm.mad;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -12,19 +13,25 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
-    TextView textView;
+    Button btnLesson1, btnLesson2, btnLesson3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        Log.d("Lifecycle", "onCreate");
-//        textView = findViewById(R.id.textView1);
-//        button = findViewById(R.id.button1);
-//
-//        textView.setText("Hello NIBM");
+
+        btnLesson1 = findViewById(R.id.btnLesson1);
+        btnLesson2 = findViewById(R.id.btnLesson2);
+        btnLesson3 = findViewById(R.id.btnLesson3);
+
+        btnLesson1.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, LessonOne.class)));
+
+        btnLesson2.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, LessonTwo.class)));
+
+//        btnLesson3.setOnClickListener(v ->
+//                startActivity(new Intent(MainActivity.this, Les.class)));
 
     }
 
