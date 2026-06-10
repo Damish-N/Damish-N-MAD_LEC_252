@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NIBM_BATCH246">
         <activity
+            android:name=".LessonTreeFragmentCom"
+            android:exported="false" />
+        <activity
+            android:name=".LessonThree"
+            android:exported="false" />
+        <activity
             android:name=".layouts.RelativeLayoutActivity"
             android:exported="false" />
         <activity
