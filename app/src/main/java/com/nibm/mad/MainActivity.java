@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnLesson1, btnLesson2, btnLesson3;
+    Button btnLesson1, btnLesson2, btnLesson3, btnLesson3_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         btnLesson1 = findViewById(R.id.btnLesson1);
         btnLesson2 = findViewById(R.id.btnLesson2);
         btnLesson3 = findViewById(R.id.btnLesson3);
+        btnLesson3_1 = findViewById(R.id.btnLesson3_1);
+
 
         btnLesson1.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, LessonOne.class)));
@@ -30,44 +32,49 @@ public class MainActivity extends AppCompatActivity {
         btnLesson2.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, LessonTwo.class)));
 
-//        btnLesson3.setOnClickListener(v ->
-//                startActivity(new Intent(MainActivity.this, Les.class)));
+        btnLesson3.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, LessonThree.class)));
+
+        btnLesson3_1.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, LessonTreeFragmentCom.class)));
+
+
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-//        Log.d("Lifecycle", "onStart");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("Lifecycle", "onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("Lifecycle", "onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("Lifecycle", "onStop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d("Lifecycle", "onRestart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d("Lifecycle", "onDestroy");
-    }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+////        Log.d("Lifecycle", "onStart");
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.d("Lifecycle", "onResume");
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Log.d("Lifecycle", "onPause");
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Log.d("Lifecycle", "onStop");
+//    }
+//
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        Log.d("Lifecycle", "onRestart");
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        Log.d("Lifecycle", "onDestroy");
+//    }
 }
