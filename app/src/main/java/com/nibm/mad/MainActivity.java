@@ -12,6 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.nibm.asyncTasks.AsyncTaskExample;
+import com.nibm.mad.recyclerView.RecyclerViewExm;
+
 public class MainActivity extends AppCompatActivity {
     Button btnLesson1, btnLesson2, btnLesson3, btnLesson3_1;
 
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LessonThree.class)));
 
         btnLesson3_1.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, LessonTreeFragmentCom.class)));
+                startActivity(new Intent(MainActivity.this, AsyncTaskExample.class)));
 
 
 
