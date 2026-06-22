@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NIBM_BATCH246">
         <activity
+            android:name="com.nibm.asyncTasks.AsyncTaskExample"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.RecyclerViewExm"
+            android:exported="false" />
+        <activity
             android:name=".LessonTreeFragmentCom"
             android:exported="false" />
         <activity
