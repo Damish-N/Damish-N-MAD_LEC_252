@@ -12,11 +12,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.nibm.api.ApiActivity;
 import com.nibm.asyncTasks.AsyncTaskExample;
+import com.nibm.contactsApp.ContactActivity;
 import com.nibm.mad.recyclerView.RecyclerViewExm;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnLesson1, btnLesson2, btnLesson3, btnLesson3_1;
+    Button btnLesson1, btnLesson2, btnLesson3, btnLesson3_1, btnLesson5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnLesson2 = findViewById(R.id.btnLesson2);
         btnLesson3 = findViewById(R.id.btnLesson3);
         btnLesson3_1 = findViewById(R.id.btnLesson3_1);
+        btnLesson5 = findViewById(R.id.btnLesson5);
 
 
         btnLesson1.setOnClickListener(v ->
@@ -39,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LessonThree.class)));
 
         btnLesson3_1.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, AsyncTaskExample.class)));
-
+                startActivity(new Intent(MainActivity.this, ContactActivity.class)));
+        btnLesson5.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ApiActivity.class)));
 
 
     }
